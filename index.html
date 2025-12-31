@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Abstract</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lightBlue: "#4C5FD5",
+              veryLightBlue: "#dadbf1",
+            },
+            fontFamily: {
+              inter: "Inter",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-inter">
+    <!-- header -->
+    <header id="header" class="bg-black w-full">
+      <!-- nav -->
+      <div class="container mx-auto">
+        <nav class="w-full flex justify-between items-center lg:px-8 py-4 px-2">
+          <!-- logo - link -->
+          <div class="flex items-center gap-2">
+            <!-- logo -->
+            <div class="font-bold text-white text-xl flex items-center">
+              <img src="assets/images/fake-logo.png" alt="logo" class="w-7" />
+              <span>Abstract</span>
+            </div>
+            <!-- V line -->
+            <div class="flex items-center">
+              <div class="h-5 w-[1px] bg-white mt-[0.05rem]"></div>
+            </div>
+            <!-- link -->
+            <div>
+              <a
+                href="#"
+                class="inline-block text-white hover:text-lightBlue transtion duration-300"
+                >Help Center</a
+              >
+            </div>
+          </div>
+          <!-- Buttons -->
+          <div class="md:flex items-center gap-2 text-md hidden">
+            <button
+              class="border rounded-md border-white text-white bg-gray-900 py-1 px-2 hover:opacity-80 transtion-all duration-300"
+            >
+              Submit a request
+            </button>
+            <button
+              class="border rounded-md border-lightBlue rounded-md text-white bg-lightBlue py-1 px-3 hover:opacity-80 transtion-all duration-300"
+            >
+              Sign in
+            </button>
+          </div>
+          <div class="md:hidden flex items-center text-2xl">
+            <i
+              class="bx bx-menu bx-rotate-90 bx-flip-vertical"
+              style="color: #ffffff"
+            ></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
