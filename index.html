@@ -40,7 +40,9 @@
           <!-- logo - link -->
           <div class="flex items-center gap-2">
             <!-- logo -->
-            <div class="font-bold text-white text-xl flex items-center">
+            <div
+              class="font-bold text-white text-xl space-x-1 flex items-center"
+            >
               <img src="assets/images/fake-logo.png" alt="logo" class="w-7" />
               <span>Abstract</span>
             </div>
@@ -97,7 +99,7 @@
             name="search"
             type="text"
             placeholder="Search"
-            class="w-full pl-1 py-2 px-4 focus:outline-none rounded-sm border border-black shadow-sm"
+            class="w-full pl-1 py-2 px-4 focus:outline-none rounded-md focus:border-lightBlue border border-black shadow-sm"
           />
           <div class="absolute text-2xl top-2 right-1">
             <i
@@ -124,11 +126,10 @@
             />
             <!-- content -->
             <div class="flex flex-col space-y-2">
-              <h4 class="lg:w-2/3 w-3/4 text-md font-semibold">Branches</h4>
-              <p class="font-light text-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Cupiditate fugiat laudantium, voluptatibus, expedita consequatur
-                aut magni minus adipisci.
+              <h3 class="lg:w-2/3 w-3/4 text-lg font-semibold">Branches</h3>
+              <p class="leading-relaxed text-sm">
+                Abstract Branches lets you manage, version, and document your
+                designs in one place.
               </p>
               <div
                 class="group flex flex-row items-center space-x-1 text-lightBlue text-sm hover:opacity-70 transtion-all duration-200"
@@ -149,13 +150,12 @@
             />
             <!-- content -->
             <div class="flex flex-col space-y-2">
-              <h4 class="lg:w-2/3 w-3/4 text-md font-semibold">
+              <h3 class="lg:w-2/3 w-3/4 text-lg font-semibold">
                 Manage your account
-              </h4>
-              <p class="font-light text-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Cupiditate fugiat laudantium, voluptatibus, expedita consequatur
-                aut magni minus adipisci.
+              </h3>
+              <p class="leading-relaxed text-sm">
+                Configure your account settings, such as your email, profile
+                details, and password.
               </p>
               <div
                 class="group flex flex-row items-center space-x-1 text-lightBlue text-sm hover:opacity-70 transtion-all duration-200"
@@ -175,13 +175,12 @@
             />
             <!-- content -->
             <div class="flex flex-col space-y-2">
-              <h4 class="lg:w-2/3 w-3/4 text-md font-semibold">
+              <h3 class="lg:w-2/3 w-3/4 text-lg font-semibold">
                 Manage orgnizations,teams, and projects
-              </h4>
-              <p class="font-light text-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Cupiditate fugiat laudantium, voluptatibus, expedita consequatur
-                aut magni minus adipisci.
+              </h3>
+              <p class="leading-relaxed text-sm">
+                Use organizations, teams, and projects to organize your people
+                and your work.
               </p>
               <div
                 class="group flex flex-row items-center space-x-1 text-lightBlue text-sm hover:opacity-70 transtion-all duration-200"
@@ -201,13 +200,11 @@
             />
             <!-- content -->
             <div class="flex flex-col space-y-2">
-              <h4 class="lg:w-2/3 w-3/4 text-md font-semibold">
+              <h3 class="lg:w-2/3 w-3/4 text-lg font-semibold">
                 Manage billing
-              </h4>
-              <p class="font-light text-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Cupiditate fugiat laudantium, voluptatibus, expedita consequatur
-                aut magni minus adipisci.
+              </h3>
+              <p class="leading-relaxed text-sm">
+                Change subscriptions and payment details.
               </p>
               <div
                 class="group flex flex-row items-center space-x-1 text-lightBlue text-sm hover:opacity-70 transtion-all duration-200"
@@ -227,13 +224,11 @@
             />
             <!-- content -->
             <div class="flex flex-col space-y-2">
-              <h4 class="lg:w-2/3 w-3/4 text-md font-semibold">
+              <h3 class="lg:w-2/3 w-3/4 text-lg font-semibold">
                 Authenticate to Abstract
-              </h4>
-              <p class="font-light text-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Cupiditate fugiat laudantium, voluptatibus, expedita consequatur
-                aut magni minus adipisci.
+              </h3>
+              <p class="leading-relaxed text-sm">
+                Set up and configure SSO, SCIM, and Just-in-Time provisioning.
               </p>
               <div
                 class="group flex flex-row items-center space-x-1 text-lightBlue text-sm hover:opacity-70 transtion-all duration-200"
@@ -253,10 +248,10 @@
             />
             <!-- content -->
             <div class="flex flex-col space-y-2">
-              <h4 class="lg:w-2/3 w-3/4 text-md font-semibold">
+              <h3 class="lg:w-2/3 w-3/4 text-lg font-semibold">
                 Abstract support
-              </h4>
-              <p class="font-light text-sm">Get in touch with a human</p>
+              </h3>
+              <p class="leading-relaxed text-sm">Get in touch with a human</p>
               <div
                 class="group flex flex-row items-center space-x-1 text-lightBlue text-sm hover:opacity-70 transtion-all duration-200"
               >
@@ -268,5 +263,135 @@
         </div>
       </div>
     </section>
+    <!-- footer -->
+    <footer id="footer" class="bg-black md:py-8 md:pb-14 py-6">
+      <!-- container -->
+      <div class="container mx-auto">
+        <div
+          class="grid lg:grid-cols-5 md:grid-cols-4 grid-cols-3 lg:px-20 py-4 px-4 gap-2 md:gap-4"
+        >
+          <!-- item 1 -->
+          <div class="flex flex-col gap-2 text-white">
+            <h4 class="text-md font-semibold">Abstract</h4>
+            <div class="flex flex-col gap-1">
+              <a
+                href="#"
+                class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                >branches</a
+              >
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="flex flex-col gap-2 text-white">
+            <h4 class="text-md font-semibold">Resources</h4>
+            <div class="flex flex-col gap-1">
+              <a
+                href="#"
+                class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                >blog</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                >help center</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                >release Notes</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                >status</a
+              >
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="flex flex-col gap-2 text-white">
+            <h4 class="text-md font-semibold">Community</h4>
+            <div class="flex flex-col gap-1">
+              <a
+                href="#"
+                class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                >Twitter</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                >linkedIn</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                >Facebook</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                >dribbble</a
+              >
+              <a
+                href="#"
+                class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                >prodcast</a
+              >
+            </div>
+          </div>
+          <!-- item 4 -->
+          <div class="flex flex-col gap-3 text-white">
+            <div class="flex flex-col gap-2">
+              <h4 class="text-md font-semibold">Company</h4>
+              <div class="flex flex-col gap-1">
+                <a
+                  href="#"
+                  class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                  >About Us</a
+                >
+                <a
+                  href="#"
+                  class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                  >Careers</a
+                >
+                <a
+                  href="#"
+                  class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                  >Lehal</a
+                >
+              </div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h4 class="text-md font-semibold">Contact Us</h4>
+              <div class="flex flex-col gap-1">
+                <a
+                  href="mailto:info@abstract.com"
+                  class="inline-block text-xs capitalize hover:text-veryLightBlue"
+                  >info@abstract.com</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- item 5 -->
+          <div
+            class="flex flex-col text-white justify-end space-y-2 md:col-span-1 col-span-2"
+          >
+            <img
+              src="assets/images/fake-logo.png"
+              alt="logo"
+              class="w-7 h-7 flex-start"
+            />
+
+            <p class="text-sm">
+              &copy; Copyright <span id="year">2025</span>
+              Abstract Studio Design, Inc. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const copyrightEl = document.getElementById("year");
+      copyrightEl.textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
