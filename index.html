@@ -60,11 +60,13 @@
           <!-- Buttons -->
           <div class="md:flex items-center gap-2 text-md hidden">
             <button
+              aria-label="Submit a request"
               class="border rounded-md border-white text-white bg-gray-900 py-1 px-2 hover:opacity-80 transtion-all duration-300"
             >
               Submit a request
             </button>
             <button
+              aria-label="Sign in"
               class="border rounded-md border-lightBlue rounded-md text-white bg-lightBlue py-1 px-3 hover:opacity-80 transtion-all duration-300"
             >
               Sign in
@@ -79,5 +81,32 @@
         </nav>
       </div>
     </header>
+    <!-- Search section -->
+    <section id="search" class="bg-veryLightBlue">
+      <div
+        class="flex flex-col container items-center space-y-6 justify-center mx-auto py-24"
+      >
+        <!-- header -->
+        <h1 class="font-medium text-4xl md:text-5xl">How can we help?</h1>
+        <!-- input field -->
+        <div class="relative w-full md:max-w-xl max-w-sm">
+          <label for="search" class="hidden"></label>
+          <input
+            aria-label="search"
+            id="search"
+            name="search"
+            type="text"
+            placeholder="Search"
+            class="w-full pl-1 py-2 px-4 focus:outline-none rounded-sm border border-black shadow-sm"
+          />
+          <div class="absolute text-2xl top-2 right-1">
+            <i
+              class="bx bx-arrow-right bx-rotate-90 bx-flip-vertical"
+              style="color: #000000"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
