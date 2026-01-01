@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,9 +32,12 @@
       };
     </script>
   </head>
-  <body class="font-inter">
+  <body class="overflow-x-hidden font-inter">
     <!-- header -->
-    <header id="header" class="bg-black w-full">
+    <header
+      id="header"
+      class="relative bg-black w-full transtion-all duration-200"
+    >
       <!-- nav -->
       <div class="container mx-auto">
         <nav class="w-full flex justify-between items-center lg:px-8 py-4 px-2">
@@ -75,15 +78,39 @@
               Sign in
             </button>
           </div>
-          <div class="md:hidden flex items-center text-2xl">
+          <button
+            type="button"
+            aria-label="menu button"
+            id="menu-btn"
+            class="menu md:hidden flex items-center text-2xl"
+          >
             <i
               class="bx bx-menu bx-rotate-90 bx-flip-vertical"
               style="color: #ffffff"
             ></i>
-          </div>
+          </button>
         </nav>
       </div>
+      <!--mobile screen -->
+      <div
+        id="mobile-screen-menu"
+        class="z-10 absolute bg-black w-full opacity-95 md:hidden flex-col gap-2 text-md flex min-h-screen py-8 px-24 translate-x-full transtion-all duration-200"
+      >
+        <button
+          aria-label="Submit a request"
+          class="border rounded-md border-white text-white bg-gray-900 py-1 px-2 hover:opacity-80 transtion-all duration-300"
+        >
+          Submit a request
+        </button>
+        <button
+          aria-label="Sign in"
+          class="border rounded-md border-lightBlue rounded-md text-white bg-lightBlue py-1 px-3 hover:opacity-80 transtion-all duration-300"
+        >
+          Sign in
+        </button>
+      </div>
     </header>
+
     <!-- Search section -->
     <section id="search" class="bg-veryLightBlue">
       <div
@@ -113,7 +140,7 @@
     </section>
     <!-- features section -->
     <section id="features">
-      <div class="container p-14 md:p-16 lg:p-24 xl:py-32 xl:p-40 mx-auto">
+      <div class="container p-8 md:p-16 lg:p-24 xl:py-32 xl:p-40 mx-auto">
         <div
           class="w-full grid md:grid-cols-2 grid-cols-1 gap-10 gap-y-14 lg:gap-14 lg:gap-y-18"
         >
